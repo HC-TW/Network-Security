@@ -56,3 +56,69 @@ set in NS project1 sets.xlsx which has been uploaded on the new e3 platform. Sce
         You may use nslookup command to create the log. The domain is required to be youtube.com.
     10. Visit http website:\
         The website is require to be http://www.fybus.com.tw/
+## Project 2
+### Project Description
+The goal of this project is to practice cyber attack log analysis. This is a personal project, each of
+you will be provided with 5 sets of data collected when different attacks are carried out. You have to
+implement a classifier to classify different attack scenarios. You can either observe the logs and then
+write a **rule-based model** or use **machine learning method** to tune a best-result model. You are
+encouraged to use ELK stack in project1 to perform the analysis.
+### Project Guide
+1. **Project Target:**
+The goal of this project is to practice analyzing logs. Log can be analyzed in many different ways
+for different purposes, and for this project, you are practicing classifying attack type with simple
+attack cases. In this project, you need to first observe the logs, then pre-process the logs, and then
+finally construct a classification model.
+2. **Keywords:**
+    1. Log Analysis:\
+        Log analysis is the process of making sense of computer-generated log messages, also known
+        as log events, audit trail records, or simply logs. Log analysis provides useful metrics that
+        paint a clear picture of what has happened across the infrastructure. You can use this data to
+        improve or solve performance issues within an application or infrastructure. Looking at the
+        bigger picture, companies analyze logs to proactively and reactively mitigate risks, comply
+        with security policies, audits, and regulations, and understand online user behavior.
+    2. Machine Learning:\
+        Machine learning (ML) is the study of computer algorithms that improve automatically
+        through experience. It is seen as a subset of artificial intelligence. Machine learning algorithms build a mathematical model based on sample data, known as         ”training data”, in order
+        to make predictions or decisions without being explicitly programmed to do so. Machine
+        learning algorithms are used in a wide variety of applications, such as email filtering and computer vision, where it is difficult or infeasible to develop         conventional algorithms to perform
+        the needed tasks.
+    3. Cyber Attack:\
+        In computers and computer networks an attack is any attempt to expose, alter, disable,
+        destroy, steal or gain unauthorized access to or make unauthorized use of an asset.[1] A
+        cyberattack is any type of offensive maneuver that targets computer information systems,
+        infrastructures, computer networks, or personal computer devices. An attacker is a person or
+        process that attempts to access data, functions or other restricted areas of the system without
+        authorization, potentially with malicious intent.
+### Attack Scenarios
+- **Attack Scenario Description:**
+    - **Port Scan:**\
+        The logs are collected from a host that was attacked by port scan.
+        A port scan is an attack that sends client requests to a range of server port addresses on
+        a host, with the goal of finding an active port and exploiting a known vulnerability of that
+        service. Scanning, as a method for discovering exploitable communication channels, has been
+        around for ages.
+    - **SQL Injection:**\
+        The logs are collected from a web server that has a SQL database vulnerability and was attacked by SQL injection.
+        SQL injection is a code injection technique, used to attack data-driven applications, in which
+        malicious SQL statements are inserted into an entry field for execution (e.g. to dump the
+        database contents to the attacker). For example, when user input is either incorrectly filtered
+        for string literal escape characters embedded in SQL statements or user input is not strongly
+        typed and unexpectedly executed.
+    - **Brute-Force attack:**\
+        The logs are collected from a web server that was attacked by brute-force attack. The attacker
+        attempted to guess the username and password.
+        A brute-force attack consists of an attacker submitting many passwords or passphrases with
+        the hope of eventually guessing correctly.
+    - **DDoS:**\
+        The logs are collected from a web server that was attacked by Dos. In other words, the web
+        service was overwhelmed by numerous requests. The web service is running on the default
+        port 80.
+        Denial of service(Dos) is typically accomplished by flooding the targeted machine or resource
+        with superfluous requests in an attempt to overload systems and prevent some or all legitimate
+        requests from being fulfilled.
+    - **Phishing Email(Malicious Attachment):**\
+        The log is collected by a host that accidentally downloaded a malicious pdf attachment from an
+        email. The attacker used the pdf file to attack the Adobe acrobat vulnerability and managed
+        to exploit the CVE. After obtaining control of cmd.exe, the attacker searched for the desired
+        data. Finally, compressed the data with tar and transferred to their own server.
